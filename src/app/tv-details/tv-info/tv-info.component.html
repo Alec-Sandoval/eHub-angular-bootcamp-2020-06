@@ -1,0 +1,21 @@
+<div class="name">{{ show.name }}</div>
+<div>
+  <h1>Overview</h1>
+  {{ show.overview }}
+</div>
+<div>
+  <h1>Homepage</h1>
+  <a [href]="show.homepage">{{ show.homepage }}</a>
+</div>
+<div>
+  <h1>Networks</h1>
+  <ng-container *ngFor="let network of show.networks; let i = index">
+    <span *ngIf="i > 0">, </span>{{ network.name }}
+  </ng-container>
+</div>
+<div>
+  <h1>Production Companies</h1>
+  <ng-container *ngFor="let prodCompany of show.productionCompanies; let i = index">
+    <span *ngIf="i > 0">, </span>{{ prodCompany.name }}
+  </ng-container>
+</div>

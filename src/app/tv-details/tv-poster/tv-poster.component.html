@@ -1,0 +1,8 @@
+<div class="poster" style.background-image="url(https://image.tmdb.org/t/p/original{{ show?.posterPath }})">
+  <div class="details">
+    <p class="name">{{ show.name }}</p>
+    <p>Popularity: <span class="value">{{ (show.popularity/100) | percent:'2.0-3' }}</span></p>
+    <p>Rating: <span class="value">{{ show.voteAverage }}/10</span></p>
+    <p>Status: <span class="value">{{ show.status }}</span></p>
+  </div>
+</div>
