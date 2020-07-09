@@ -1,0 +1,24 @@
+.nav-main,
+.nav-user {
+  display: flex;
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.nav-main {
+  flex: 1 1 auto;
+
+  h1 {
+    margin-right: 16px;;
+  }
+}
+
+.nav-user {
+  flex: 0 0 auto;
+}
+
+.main {
+  padding: 16px;
+}

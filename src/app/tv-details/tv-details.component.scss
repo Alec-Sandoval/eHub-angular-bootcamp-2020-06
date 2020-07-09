@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+
+  .summary {
+    display: flex;
+
+    .poster {
+      margin-right: 32px;
+    }
+  }
+}
